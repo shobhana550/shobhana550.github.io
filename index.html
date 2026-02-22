@@ -1,648 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Clap-Serv - Your own community service platform</title>
-<meta name="keywords"
-  content=" Packers & Movers, Carpenters, Electrician, Painters, Plumbers, Interior Designer, Gardener, Masonry Works, Welding & Febrication, House Architects, Water proofing, Civil Contractor, False ceiling, Sofa Repair & Services, Pest Control, Water tank Ceiling , Septic Tank Ceiling, Home Carpet Cleaning, Office Cleaning Services, Chimney Cleaning, House Cleaning, Glass Cleaning, Aquarium Cleaning, Bathroom Cleaning, Sofa Cleaning, Passport, Pan Card, Notary & Agreement, GST Services, VISA services, IT Return Filing Services, CA Services, Cake Delivery, Travel Planning, Flowers Delivery, Mehandi Artists, Puja Services, Caterer Services, Wedding Planners, Birthday Planners, Engagement Planner, Reception Planner, Sangeet Planner, Naming Ceremony, Flower Décor, Corporate Event, Photography Services, Physiotherapy at Home, Yoga & Meditaion, Salon Services, Beauty Services, Tailoring Service, Tatoo Artists, Fitness Trainer at Home, Bridal Makeup at home, House Keeping, Dietitian, Computer/Laptop Services, CCTV Installation & Repair, Mobile Repair, Refrigerator Repair, Water Pump Repair, Water Purifier repair, Chimney Repair, Washing Machine Repair, Geyser Repair, TV Repair LED/LCD, AC Repair, Inverter Repair, Printer Repair, TV Wall Mounting/Installation, Arbitration Lawyer , Banking/Finance/Business Lawyer , Civil Lawyers , Computer/Cyber Lawyers , Constitutional Lawyer , Consumer Lawyer , Criminal Lawyer , Employment Lawyers , Entertainment Lawyer , Environmental Lawyers , Family Lawyer , General Practice , Health Care Lawyer , Immigration Lawyer , Insurance Lawyers , Intellectual Property Laywers, Juvenile Lawyers , Media Lawyers , medico Legal , Privacy Lawyer , Property & Inheritance Lawyers , Supreme Court Lawyers, Tax Lawyers , Woman Lawyers , Within Citi, Outside Citi, Customer Support & Services, Business Support, Order Processing, Technical Support, Phone Support, Guest post and PR, Facebook Marketing, Google, Linkedin, Twitter, Pinterest, Facebook Ads, Google Adwords, Twitter Ads, Pinterest Ads, Bing Ads, SEO - Search Engine Optimization, SEM - Search & Display, Youtube, Android, IOS, Hybrid Apps, UI&UX, Narration & Voice overs, Audio-Video Editing, Custom Songs, Songwriting, Sound Effect & Loops, Music Lession, Voicemail Greetings, Website Design, UI & UX Design, Logo Design, Graphic Design, Product Design, Icons Design, Advrtisement Design, Annual Reports, Brochures, Catalogs, Cover & Page Design, Display & Posters, Flash Presentations, Industrial Design, Multimedia Animation, Photo & Image Editing, Power Point Presentations, Promotional Videos, Article Blogs, Press Release, Copywriting, Translation, Editing & Proofreading, Grants & Proposals, Newsletter, Reports, Reviews & Feedbacks, Resume & Cover Letters, Screen & Script Writing, Speeches, Technical Writing, User Guides & Manual, Transcription, Research & Survey, Designing Architecture and Solution, Bulk Mailing, Data Entry, Data Processing, Desktop Support, Email Response Handling, Excel/Macro, HR & Payroll, Office Management, Personal Assistance, Chartered Accountant, Business Incorporation, Financial Planning, Financial Reporting, Legal Assistance, Mergers & Acquisition, Raising Equity Capital, Raising Loan Capital, Income Tax Service, Venture Funding, Annual Compliances, Company Audit, Ad planning & buying, Advertising, Afiliate Marketing, Branding, Bulk Marketing, Business Plans, Classified Posting, Email Marketing, Internet Marketing, Google adsense, Leads, Marketing, Market Research, Sales, Telemarketing, Viral Marketing, Social Media Marketing, General Service, Road Side Assistance, Maintenance & Repair, Dent Repairing & Painting, Car Wash & Interior, Online Teaching Service, Home Tutoring, Classroom Teaching, Sports Training Services, Grocery Delivery Service, Vegitable Delivery Service, Property Related Service, Agricultural Service, Loan Services, Inurance Service, Rental Service,">
-<meta name="description" content="Clap-Serv - A community Service Platform">
-<meta name="author" content="Clap-Serv">
-<link rel="" href="images/logo_svg.png" />
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/custom.css">
-<link rel="stylesheet" href="css/font-awesome.css">
-<script src="js/modernizer.js">
-</script>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clap-Serv — The Marketplace Built by the People, For the People</title>
+  <meta name="description" content="Clap-Serv is India's decentralized community marketplace connecting buyers with skilled local service providers — zero commission, zero subscription.">
+  <meta name="keywords" content="local services, marketplace, plumber, electrician, carpenter, zero commission, India, service providers, community">
+  <meta name="author" content="Clap-Serv">
+  <meta property="og:title" content="Clap-Serv — Community Service Marketplace">
+  <meta property="og:description" content="Post a request. Get proposals. Pay zero commission. Join India's people-first service marketplace.">
+  <meta property="og:image" content="images/logo_svg.png">
+  <meta property="og:url" content="https://www.clap-serv.com">
+  <link rel="icon" type="image/png" href="images/logo_svg.png">
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <div id="preloader">
-    <div class="loader">
-      <div class="loader__bar">
-      </div>
-      <div class="loader__bar">
-      </div>
-      <div class="loader__bar">
-      </div>
-      <div class="loader__bar">
-      </div>
-      <div class="loader__bar">
-      </div>
-      <div class="loader__ball">
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo_svg.png" alt="Clap-Serv" height="40">
+        <span>Clap-Serv</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq/index.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://app.clap-serv.com" class="btn-nav" target="_blank">Open Web App</a>
       </div>
     </div>
-  </div>
-  <div class="top-bar">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-6 col-sm-6">
-          <div class="left-top">
-            <div class="email-box">
-              <a href="#">
-                <i class="fa fa-envelope-o" aria-hidden="true">
-                </i> contact@clap-serv.com</a>
-            </div>
-            <div class="phone-box">
-              <a href="tel:1234567890">
-                <i class="fa fa-phone" aria-hidden="true">
-                </i> +91 9652413837</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-6">
-          <div class="right-top">
-            <div class="social-box">
-              <ul>
-                <li>
-                  <a href="https://www.facebook.com/clapserv/">
-                    <i class="fa fa-facebook-square" aria-hidden="true">
-                    </i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-instagram" aria-hidden="true">
-                    </i>
-                  </a>
-                </li>
-                <li>
-                  <i class="fa fa-linkedin-square" aria-hidden="true">
-                    <a href="https://www.linkedin.com/company/clap-serv/">
-                  </i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-twitter-square" aria-hidden="true">
-                    </i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-rss-square" aria-hidden="true">
-                    </i>
-                  </a>
-                </li>
-                <ul>
-            </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Now live across India &mdash; Zero commission platform
+      </div>
+      <h1 class="hero-title">
+        The Marketplace Built<br>
+        <span class="gradient-text">by the People,<br>For the People</span>
+      </h1>
+      <p class="hero-sub">
+        Post a service request in 60 seconds. Receive competing proposals from verified local providers.
+        Negotiate directly. Pay zero platform fees — ever.
+      </p>
+      <div class="hero-actions">
+        <a href="https://play.google.com/store/apps/details?id=com.clapserv.app" class="btn-primary" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M3.18 23.76A2 2 0 0 1 2 22V2a2 2 0 0 1 1.18-1.76L14 12 3.18 23.76zm17.14-10.89L17.5 11.5l-3.5 3.5 3.5 3.5 2.82-1.36A2 2 0 0 0 20.32 12.87zM4.1.83 16.45 13.17 13.17 16.45 3.86 7.14a2.01 2.01 0 0 1 .24-6.31zM3.86 16.87l9.31-9.31 3.28 3.28L4.1 23.17A2 2 0 0 1 3.86 16.87z"/></svg>
+          Download on Android
+        </a>
+        <a href="https://app.clap-serv.com" class="btn-secondary" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 1 0 20M12 2a14.5 14.5 0 0 0 0 20M2 12h20"/></svg>
+          Use Web App
+        </a>
+      </div>
+      <div class="hero-marquee-wrap">
+        <div class="hero-marquee">
+          <div class="marquee-track">
+            <span>Plumbing</span><span>Electrician</span><span>Carpenter</span><span>Painter</span><span>Home Cleaning</span><span>AC Repair</span><span>Yoga Trainer</span><span>CA Services</span><span>Photography</span><span>Web Design</span><span>Tailoring</span><span>Pest Control</span><span>Home Tutoring</span><span>Wedding Planner</span><span>Physiotherapy</span><span>CCTV Install</span>
+            <span>Plumbing</span><span>Electrician</span><span>Carpenter</span><span>Painter</span><span>Home Cleaning</span><span>AC Repair</span><span>Yoga Trainer</span><span>CA Services</span><span>Photography</span><span>Web Design</span><span>Tailoring</span><span>Pest Control</span><span>Home Tutoring</span><span>Wedding Planner</span><span>Physiotherapy</span><span>CCTV Install</span>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <header class="header header_style_01">
-    <nav class="megamenu navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar">
-            </span>
-            <span class="icon-bar">
-            </span>
-            <span class="icon-bar">
-            </span>
+  </section>
+
+  <!-- ============ STATS BAR ============ -->
+  <section class="stats-bar">
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-num">200+</span>
+        <span class="stat-label">Service Categories</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">0%</span>
+        <span class="stat-label">Commission or Subscription Fee</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">&#x20B9;</span>
+        <span class="stat-label">You Set Your Own Price</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">India</span>
+        <span class="stat-label">Pan-India Coverage</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISION ============ -->
+  <section class="vision" id="vision">
+    <div class="section-container">
+      <div class="section-label">Our Vision</div>
+      <h2 class="section-title">A Decentralized Economy<br>Where Everyone Wins</h2>
+      <p class="section-sub">
+        Traditional platforms extract 15–30% from every transaction. We believe the value you create should stay with you.
+        Clap-Serv is built on a radical idea: a community marketplace where buyers and providers transact directly,
+        without a middleman taking a cut. We are infrastructure, not intermediary.
+      </p>
+      <div class="vision-compare">
+        <div class="compare-card compare-old">
+          <div class="compare-header">
+            <span class="compare-tag tag-old">Traditional Platform</span>
+          </div>
+          <ul class="compare-list">
+            <li class="bad">Platform charges 15–30% commission per transaction</li>
+            <li class="bad">Providers compete on a corporate algorithm's terms</li>
+            <li class="bad">Buyers have limited ability to negotiate</li>
+            <li class="bad">Your data monetized for ads</li>
+            <li class="bad">Locked into platform-set pricing tiers</li>
+          </ul>
+        </div>
+        <div class="compare-vs">VS</div>
+        <div class="compare-card compare-new">
+          <div class="compare-header">
+            <span class="compare-tag tag-new">Clap-Serv</span>
+          </div>
+          <ul class="compare-list">
+            <li class="good">Zero commission, zero subscription — forever</li>
+            <li class="good">Providers set their own rates and terms</li>
+            <li class="good">Buyers post requests and receive competing proposals</li>
+            <li class="good">Direct buyer–provider communication via in-app chat</li>
+            <li class="good">Community-driven ratings build real trust</li>
+          </ul>
+        </div>
+      </div>
+      <div class="vision-quote">
+        <blockquote>
+          "Imagine a world where your electrician lives two streets away, earns fairly, and builds a thriving business —
+          while you pay only what the service is actually worth. That world is Clap-Serv."
+        </blockquote>
+        <cite>— The Clap-Serv Team</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="section-container">
+      <div class="section-label">Simple Process</div>
+      <h2 class="section-title">How Clap-Serv Works</h2>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="buyers">For Buyers</button>
+        <button class="tab-btn" data-tab="providers">For Providers</button>
+      </div>
+      <div class="tab-content active" id="tab-buyers">
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </div>
+            <h3>Post a Request</h3>
+            <p>Describe what you need, set your budget range, and choose your location. Takes less than 60 seconds.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">02</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Receive Proposals</h3>
+            <p>Nearby verified providers see your request and send competitive proposals with their price and timeline.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">03</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Chat & Negotiate</h3>
+            <p>Compare proposals, chat directly with providers, negotiate the best deal — no platform taking a cut.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">04</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Get It Done</h3>
+            <p>Accept the best proposal, get the work done, and leave a rating to help the community.</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-providers">
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">01</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Build Your Profile</h3>
+            <p>Add your skills, set your service area, upload your portfolio, and set your hourly rate. It's 100% free.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">02</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3>Get Notified</h3>
+            <p>Receive instant push notifications when buyers near you post requests matching your skills.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">03</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Submit a Proposal</h3>
+            <p>Send your best price and timeline. You decide your worth — no algorithm, no undercutting race to the bottom.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step">
+            <div class="step-number">04</div>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Earn & Grow</h3>
+            <p>Win the job, complete the service, collect payment directly, and build your community reputation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="features">
+    <div class="section-container">
+      <div class="section-label">Platform Features</div>
+      <h2 class="section-title">Everything You Need,<br>Nothing You Don't</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #fff1f2;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#E20010" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Zero Commission</h3>
+          <p>No platform fees, no subscription charges, no hidden cuts. Every rupee you earn is yours to keep.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #f0fdf4;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Verified Community</h3>
+          <p>Providers build verified profiles with ratings from real buyers. Trust is earned, not bought.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #eff6ff;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Direct In-App Chat</h3>
+          <p>Communicate with buyers or providers in real time. Negotiate scope, timeline, and price — all in one place.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #fefce8;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#eab308" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Competitive Proposals</h3>
+          <p>Multiple providers compete for your request. You see every proposal and pick the best fit for your needs.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #fdf4ff;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Location-Based Matching</h3>
+          <p>Providers within your service area are automatically notified when you post a request — right to their phone.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" style="background: #fff7ed;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3>Prosumer Model</h3>
+          <p>Be a buyer today, a provider tomorrow. Clap-Serv supports dual roles — anyone can offer and receive services.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services-section" id="services">
+    <div class="section-container">
+      <div class="section-label">200+ Categories</div>
+      <h2 class="section-title">Every Service You Need,<br>In One Community</h2>
+      <div class="services-pills">
+        <span>Plumbing</span><span>Electrician</span><span>Carpenter</span><span>Painter</span>
+        <span>Home Cleaning</span><span>AC Repair</span><span>Packers &amp; Movers</span><span>Yoga Trainer</span>
+        <span>Physiotherapy</span><span>Tailoring</span><span>Wedding Planner</span><span>Photography</span>
+        <span>CA Services</span><span>GST Filing</span><span>Web Design</span><span>Mobile Repair</span>
+        <span>Pest Control</span><span>Gardening</span><span>CCTV Install</span><span>TV Repair</span>
+        <span>Interior Design</span><span>Masonry</span><span>Waterproofing</span><span>Salon at Home</span>
+        <span>Home Tutoring</span><span>Cake Delivery</span><span>Event Planning</span><span>Legal Services</span>
+        <span>Refrigerator Repair</span><span>Washing Machine Repair</span><span>Property Services</span><span>+ many more</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DOWNLOAD ============ -->
+  <section class="download" id="download">
+    <div class="section-container">
+      <div class="download-content">
+        <div class="section-label" style="color: #fff9;">Available On</div>
+        <h2 class="section-title" style="color: #fff;">Get Clap-Serv on<br>Your Device</h2>
+        <p style="color: #ffffff99; max-width: 480px; margin: 0 auto 2.5rem;">
+          Available as a native Android app and a full-featured progressive web app.
+          iOS version coming soon.
+        </p>
+        <div class="download-cards">
+          <a href="https://play.google.com/store/apps/details?id=com.clapserv.app" class="download-card" target="_blank">
+            <div class="download-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M3.18 23.76A2 2 0 0 1 2 22V2a2 2 0 0 1 1.18-1.76L14 12 3.18 23.76zm17.14-10.89L17.5 11.5l-3.5 3.5 3.5 3.5 2.82-1.36A2 2 0 0 0 20.32 12.87zM4.1.83 16.45 13.17 13.17 16.45 3.86 7.14a2.01 2.01 0 0 1 .24-6.31zM3.86 16.87l9.31-9.31 3.28 3.28L4.1 23.17A2 2 0 0 1 3.86 16.87z"/></svg>
+            </div>
+            <div>
+              <div class="download-sublabel">Get it on</div>
+              <div class="download-store">Google Play</div>
+            </div>
+            <div class="download-badge live">Live</div>
+          </a>
+          <a href="https://app.clap-serv.com" class="download-card" target="_blank">
+            <div class="download-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 1 0 20M12 2a14.5 14.5 0 0 0 0 20M2 12h20"/></svg>
+            </div>
+            <div>
+              <div class="download-sublabel">Open in browser</div>
+              <div class="download-store">Web App</div>
+            </div>
+            <div class="download-badge live">Live</div>
+          </a>
+          <div class="download-card disabled">
+            <div class="download-icon" style="opacity: 0.5;">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            </div>
+            <div>
+              <div class="download-sublabel">Coming soon to</div>
+              <div class="download-store">App Store</div>
+            </div>
+            <div class="download-badge soon">Soon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq-section" id="faq">
+    <div class="section-container">
+      <div class="section-label">Common Questions</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">
+            Do I need to pay any commission or subscription fee?
+            <span class="faq-icon">+</span>
           </button>
-          <a class="navbar-brand" href="index.html">
-            <img src="images/logo_svg.png" alt="Clap-Serv logo" width="100" height="65">
+          <div class="faq-a">
+            <p>No. Clap-Serv is completely free for both buyers and providers. There are no commission fees, no subscription charges, and no hidden costs — ever. You earn 100% of what you charge.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            How do payments work?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Payments are arranged directly between you and the service provider. You can pay via UPI, cash, bank transfer, or any method you agree on. Clap-Serv is not involved in the payment — we simply connect you.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Can I be both a buyer and a service provider?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Absolutely. Clap-Serv supports a "prosumer" model where you can post requests as a buyer and also offer your skills as a provider — all from the same account. Switch roles anytime from your profile.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            How are providers verified?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Providers build their reputation through community ratings and reviews left by real buyers. Every completed transaction contributes to a provider's public track record, creating transparent, community-driven trust.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            What if I'm not satisfied with the service?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>You can cancel a proposal before work begins and choose another provider. After work is completed, you can leave an honest review. The community rating system holds providers accountable publicly.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Which cities and areas are covered?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Clap-Serv covers all of India. You can post requests for any location, and providers in your area will be automatically notified. The more providers who join in your area, the faster you'll receive proposals.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">
+            Is there a mobile app?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-a">
+            <p>Yes! Download the Android app from the Google Play Store (ID: com.clapserv.app). A full-featured web app is also available at app.clap-serv.com. An iOS App Store version is in development and coming soon.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo_svg.png" alt="Clap-Serv" height="36">
+          <span>Clap-Serv</span>
+        </a>
+        <p>The community marketplace built by the people, for the people. Zero commission. Direct connections. Real community.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/clapserv/" target="_blank" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/clap-serv/" target="_blank" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="mailto:contact@clap-serv.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           </a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a class="active" href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="Terms&Condition.html">Terms & Conditions</a>
-            </li>
-            <li>
-              <a href="pricing.html">Pricing</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-            <li>
-              <a href="privacy-policy/index.html">privacy-policy</a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </nav>
-  </header>
-  <div class="slider-area">
-    <div class="slider-wrapper owl-carousel">
-      <div class="slider-item home-one-slider-otem slider-item-four slider-bg-one">
-        <div class="container">
-          <div class="row">
-            <div class="slider-content-area">
-              <div class="slide-text">
-                <h1 class="homepage-three-title">Seamless Dialogues for Your Service Demands</h1>
-                <h2>Discover the Best Way to Communicate Your Service Requirements</h2>
-                <div class="slider-content-btn">
-                  <a class="button btn btn-light btn-radius btn-brd" href="terms-conditions/index.html">Learn More</a>
-                  <a class="button btn btn-light btn-radius btn-brd" href="contact.html">Contact Us</a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="index.html">Home</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#features">Features</a>
+          <a href="#services">Services</a>
+          <a href="pricing.html">Pricing</a>
         </div>
-      </div>
-      <div class="slider-item text-center home-one-slider-otem slider-item-four slider-bg-two">
-        <div class="container">
-          <div class="row">
-            <div class="slider-content-area">
-              <div class="slide-text">
-                <h1 class="homepage-three-title">Embark on a Spectrum of Services</h1>
-                <h2>Discover an Abundance of Service Offerings</h2>
-                <div class="slider-content-btn">
-                  <a class="button btn btn-light btn-radius btn-brd" href="services.html">View Services</a>
-                  <a class="button btn btn-light btn-radius btn-brd" href="contact.html">Contact Us</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="faq/index.html">FAQ</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="mailto:contact@clap-serv.com">Email Support</a>
+          <a href="tel:+919652413837">+91 96524 13837</a>
         </div>
-      </div>
-      <div class="slider-item home-one-slider-otem slider-item-four slider-bg-three">
-        <div class="container">
-          <div class="row">
-            <div class="slider-content-area">
-              <div class="slide-text">
-                <h1 class="homepage-three-title">Effortlessly Shape Your Budget</h1>
-                <h2>Empowering You to Negotiate Fair Prices with Service Providers</h2>
-                <div class="slider-content-btn">
-                  <a class="button btn btn-light btn-radius btn-brd" href="Terms&Condition.html">How It Works</a>
-                  <a class="button btn btn-light btn-radius btn-brd" href="contact.html">Contact Us</a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="terms-conditions/index.html">Terms &amp; Conditions</a>
+          <a href="privacy-policy/index.html">Privacy Policy</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get the App</h4>
+          <a href="https://play.google.com/store/apps/details?id=com.clapserv.app" target="_blank">Android App</a>
+          <a href="https://app.clap-serv.com" target="_blank">Web App</a>
+          <a href="#download" style="opacity: 0.5; pointer-events: none;">iOS — Coming Soon</a>
         </div>
       </div>
     </div>
-  </div>
-  <div id="about" class="section wb">
-    <hr class="hr1">
-    <div id="about" class="section wb">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="post-media wow fadeIn">
-            <img src="images/home.png" alt="Home overview">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="post-media wow fadeIn">
-            <img src="images/About.png" alt="About Clap-Serv">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="post-media wow fadeIn">
-            <img src="images/3.png" alt="Community features">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="post-media wow fadeIn">
-            <img src="images/4.png" alt="Service provider benefits">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="post-media wow fadeIn">
-            <img src="images/5.png" alt="Our approach">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="post-media wow fadeIn">
-            <img src="images/CSR.png" alt="Corporate social responsibility">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="post-media wow fadeIn">
-            <img src="images/8.png" alt="Community statistics">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="post-media wow fadeIn">
-            <img src="images/Team.png" alt="Team members">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="post-media wow fadeIn">
-            <img src="images/10.png" alt="Download the app">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="post-media wow fadeIn">
-            <img src="images/Contact.png" alt="Contact details">
-          </div>
-        </div>
-      </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Clap-Serv. All rights reserved. Built with &hearts; for the community.</p>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="post-media wow fadeIn">
-          <img src="images/logosm4.jpg" alt="Promotional banner" class="img-responsive img-rounded">
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="message-box">
-          <h4>Empowering Community Developers</h4>
-          <h2>Unleashing the Power of Connected Services</h2>
-          <p class="lead">At Clap-Serv, we envision a harmonious family, united by a shared purpose—creating a demand-based service ecosystem for one another. Together, we form a distributed source of services, where every member plays a vital
-            role. Imagine a fruit vendor arriving at your doorstep with fresh fruits every third day, tailored to your preferences. Or the excitement of transforming your Maruti Car into a stunning sports car with skilled assistance.</p>
-          <p class="lead"></br></br>
-            <a href="terms-conditions/index.html" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  <div class="parallax section parallax-off" data-stellar-background-ratio="0.9" style="background-image:url('uploads/parallax_04.jpg');">
-    <div class="container">
-      <div class="row text-center stat-wrap">
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <span data-scroll class="global-radius icon_wrap effect-1">
-            <i class="fa fa-list" aria-hidden="true">
-            </i>
-            </i>
-          </span>
-          <p class="stat_percent">>200</p>
-          <h3>Services Included</h3>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <span data-scroll class="global-radius icon_wrap effect-1">
-            <i class="fa fa-smile-o" aria-hidden="true">
-            </i>
-          </span>
-          <p class="stat_percent">>95%</p>
-          <h3>Value for money</h3>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <span data-scroll class="global-radius icon_wrap effect-1">
-            <i class="fa fa-money" aria-hidden="true">
-            </i>
-          </span>
-          <p class="stat_percent">0</p>
-          <h3>Comission/Subscription Fee</h3>
-        </div>
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <span data-scroll class="global-radius icon_wrap effect-1">
-            <i class="fa fa-question-circle-o" aria-hidden="true">
-            </i>
-          </span>
-          <p class="stat_count">81</p>
-          <h3>Zip Codes included</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="services" class="parallax section wb">
-    <div class="container">
-      <div class="section-title text-center">
-        <h3>Empowering Opportunities and Redefining Services</h3>
-        <p class="lead">Welcome to Clap-Serv, where we forge a world-class community of service providers, consumers, and prosumers—a landscape teeming with possibilities.Our mission is to revolutionize the way services are procured. Here, your
-          unique needs find attentive ears within our community. The price and terms are set by us, ensuring a fair and transparent marketplace. Most importantly, we empower you to shape your services according to your preferences and desires.At
-          Clap-Serv, we value your experience above all else. Our review and rating system allows you to candidly share your feedback, guiding fellow community members towards the best service providers.Join us in this transformative journey,
-          where opportunity and innovation intertwine, and together, we define the future of service exchanges.</p>
-      </div>
-      <hr class="hr1">
-      <div class="text-center">
-        <a data-scroll href="#" class="btn btn-light btn-radius btn-brd">View Our Portfolio</a>
-        <p class="lead"></br></br>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="message-box">
-            <h4>Why Choose Clap-Serv Platform?</h4>
-            <h2>Empowering a Community, Unlocking Limitless Opportunities</h2>
-            <p class="lead">At Clap-Serv, we are on a mission to create an extraordinary digital experience for billions of professionals worldwide. As an aspiring entrepreneur myself, I faced numerous challenges while searching for reliable
-              service providers. The struggle to find the right match not only drained my resources but also delayed my progress. I soon realized that this was a common narrative shared by countless individuals globally.</p>
-            <p>
-              <strong>Community Experience:</strong> Every day, we encounter promises of top-notch quality and unbeatable prices, but true insight only comes through experience. By harnessing the power of our community, we can share our firsthand
-              experiences, guiding each other towards exceptional service providers.
-            </p>
-            <p>
-              <strong>Democratizing Growth:</strong> Imagine a world where the brilliance of IT companies, for instance, is not confined to corporate offices but extends to a network of skilled professionals worldwide. Through Clap-Serv, such a
-              vision becomes possible, where talented individuals and small teams deliver top-tier work at a more affordable price, leveling the playing field for all.
-            </p>
-            <p>
-              <strong>Effortless Communication:</strong> We understand the importance of clear communication in meeting unique service requirements. Too often, customers and service providers struggle to align their expectations, leading to
-              disappointment. Clap-Serv's innovative methodology simplifies this process, fostering a deeper understanding of each service request and ensuring successful outcomes.
-            </p>
-            <p>
-              <strong>Zero Commission & Zero Subscription Platform:</strong> In our pursuit of equal opportunity, Clap-Serv is a commission and subscription-free platform for all community members. This empowers every individual, opening doors to
-              unlimited opportunities for growth and collaboration.
-            </p>
-            <p>
-              <strong>Blurring the Lines between Consumers and Producers:</strong> When our community collaborates to create products and services for our unique needs, the distinction between consumers and producers fades away. Mass
-              customization becomes the norm, fostering genuine competitiveness in the market.
-            </p>
-            <p>Join us in this transformative journey, where collective knowledge drives success, and together, we build a world of boundless possibilities.</p>
-            <a href="terms-conditions/index.html" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  <div class="parallax section noover" data-stellar-background-ratio="0.7" style="background-image:url('uploads/parallax_05.png');">
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <div class="customwidget text-left">
-            <center>
-              <h1> Why Clap-Serv is so Interesting? </h1>
-            </center>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="text-center image-center hidden-sm hidden-xs">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="features" class="section lb">
-    <div class="container">
-      <div class="section-title text-center">
-        <h3>Features & Overviews</h3>
-        <p class="lead">Embark on a Journey of New Service Experiences</p>
-        <p>At Clap-Serv, our app is a gateway to redefine service requests and foster a thriving community of freelance professionals, regardless of their expertise—be it white-collar or blue-collar services—empowering them to offer their skills to
-          customers worldwide.</p>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="features-left">
-            <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-              <i class="fa fa-male" aria-hidden="true">
-              </i>
-              <div class="fl-inner">
-                <h4>Discover Your Provider</h4>
-                <p>Connecting You with the saviour of your day</p>
-              </div>
-            </li>
-            <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-              <i class="fa fa-inr" aria-hidden="true">
-              </i>
-              <div class="fl-inner">
-                <h4>Explore Unbeatable Deals</h4>
-                <p>Where Quality Meets Affordability </p>
-              </div>
-            </li>
-            <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.4s">
-              <i class="fa fa-tags" aria-hidden="true">
-              </i>
-              <div class="fl-inner">
-                <h4>Ignite Your Quotes Quest</h4>
-                <p>Empowering You to Request and Receive</p>
-              </div>
-            </li>
-            <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-              <i class="fa fa-plug" aria-hidden="true">
-              </i>
-              <div class="fl-inner">
-                <h4>Stay Seamlessly Connected</h4>
-                <p>Your Portal for Seamless Connections</p>
-              </div>
-            </li>
-            <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-              <i class="fa fa-map-marker" aria-hidden="true">
-              </i>
-              <div class="fl-inner">
-                <h4>Select Your Spot</h4>
-                <p>Tailoring Services to Your Preferred Location </p>
-              </div>
-            </li>
-            <li class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-              <i class="fa fa-map-marker" aria-hidden="true">
-              </i>
-              <div class="fl-inner">
-                <h4>Endless Value, Endless Savings</h4>
-                <p>Unleash Limitless Economies, Every Time </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4 hidden-xs hidden-sm">
-          <img src="uploads/mobile.svg" class="img-center" height="1020 px" width="380px" top="10PX" alt="Mobile app screenshot">
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="features-right">
-            <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-              <i class="fa fa-user" aria-hidden="true">
-              </i>
-              <div class="fr-inner">
-                <h4>No Discovery Customers</h4>
-                <p>Customers can find you easily now. </p>
-              </div>
-            </li>
-            <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
-              <i class="fa fa-commenting" aria-hidden="true">
-              </i>
-              <div class="fr-inner">
-                <h4>Forge Bonds with Your Audience</h4>
-                <p>Empowering You to Connect on a Personal Level </p>
-              </div>
-            </li>
-            <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.4s">
-              <i class="fa fa-print" aria-hidden="true">
-              </i>
-              <div class="fr-inner">
-                <h4>Commission-Free Collaboration</h4>
-                <p>Unlock Your Potential, Zero Constraints</p>
-              </div>
-            </li>
-            <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-              <i class="fa fa-file-text-o" aria-hidden="true">
-              </i>
-              <div class="fr-inner">
-                <h4>Price Your Way to Success</h4>
-                <p>Setting Your Value, Your Rules</p>
-              </div>
-            </li>
-            <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-              <i class="fa fa-smile-o" aria-hidden="true">
-              </i>
-              <div class="fr-inner">
-                <h4>Craft Your Identity</h4>
-                <p> Elevate Your Brand, Unleash Your Potential</p>
-              </div>
-            </li>
-            <li class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-              <i class="fa fa-smile-o" aria-hidden="true">
-              </i>
-              <div class="fr-inner">
-                <h4>Clarity in Service Dynamics</h4>
-                <p> Understanding Your Requests with Precision</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="post-media wow fadeIn">
-              <img src="uploads/CustomerBidding.png" alt="Customer bidding example">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="post-media wow fadeIn">
-              <img src="uploads/providersproposal.png" alt="Service provider proposal">
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <br></br>
-      </div>
-      <div class="section-title text-center">
-        <h3>
-          <strong>So why wait, go for it and register today.</strong>
-        </h3>
-        <h1>
-          <strong>Meet New & Interesting Clap-Serv community service App.</strong>
-        </h1>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <h3>
-            <strong>Download Today</strong>
-          </h3>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <a data-scroll href="https://play.google.com/store/apps/details?id=com.clapserv&hl=en_IN" class="btn btn-light btn-radius btn-brd">
-            <i class="fa fa-android" aria-hidden="true">
-            </i> Download</a>
-        </div>
-      </div>
-      <br>
-      <br>
-      <br>
-      <br>
-      <div class="grid_10">
-        <div id="le_area6" le_region_slug="area6" le_region_uuid="area6" le_region_name="Area 6" le_region_type="content" le_region_editable="false" class="le_region le_area6">
-        </div>
-        <div class="clear">
-        </div>
-        <div class="grid_7 omega">
-          <div id="le_area9" le_region_slug="area9" le_region_uuid="area9" le_region_name="Area 9" le_region_type="content" le_region_editable="false" class="le_region le_area9">
-            <div class="le_content" le_content_type="text" id="le_569d59a8d3349" le_content_uuid="569d59a8d3349" data-best_fit="1" data-attr_width="">
-              <h1>
-                <strong>Frequently Asked Questions</strong>
-                <br>
-                <br>
-              </h1>
-            </div>
-            <div class="le_content" le_content_type="text" id="le_569d59b5c06d6" le_content_uuid="569d59b5c06d6" data-best_fit="1" data-attr_width="">
-              <strong>Q. Do you have any fixed cost for the Services?</strong>
-              <br> It depends on the Vendor you select. If your provider offers a fixed cost with no room for negotiation, feel free to choose another provider and negotiate for the best deal.<br>
-              <br>
-            </div>
-            <div class="le_content" le_content_type="text" id="le_569d5af5ad005" le_content_uuid="569d5af5ad005" data-best_fit="1" data-attr_width="">
-              <strong>Q. Can I book my service and pay through this app?</strong>
-              <br> No, the app is designed to foster a community where professionals collaborate with consumers. For final booking and payment, you will have to communicate directly with the service provider via call or chat to arrange the service
-              and payment details.<br>
-              <br>
-            </div>
-            <div class="le_content" le_content_type="text" id="le_569d5b0aa69c6" le_content_uuid="569d5b0aa69c6" data-best_fit="1" data-attr_width="">
-              <strong>Q. Can I hire teachers here?</strong>
-              <br> Yes, you can! We offer three categories of teachers: Tutor at home, Virtual training, and coaching centers. Simply submit your requirements and specifications, explore the quotations submitted by teachers, and choose the best fit
-              for your needs.<br>
-              <br>
-            </div>
-            <div class="le_content" le_content_type="text" id="le_569d5b334f5e6" le_content_uuid="569d5b334f5e6" data-best_fit="1" data-attr_width="">
-              <strong>Q. What if I want to cancel after booking?</strong>
-              <br> You can cancel your booking and consider other providers who have submitted their quotes. Choose the one that best meets your requirements.<br>
-              <br>
-            </div>
-            <div class="le_content" le_content_type="text" id="le_569d5b334f5e6" le_content_uuid="569d5b334f5e6" data-best_fit="1" data-attr_width="">
-              <strong>Q. Can I hire agricultural service providers as well?</strong>
-              <br> Absolutely! If a provider offers agricultural services, you can hire them to fulfill your agricultural needs.<br>
-              <br>
-            </div>
-            <div class="le_content" le_content_type="text" id="le_569d5b478c4fb" le_content_uuid="569d5b478c4fb" data-best_fit="1" data-attr_width="">
-              <strong>Q. Do I get any Warranty on my service?</strong>
-              <br> The warranty option depends on the service provider you choose. Some may provide warranty coverage while others may not. It's essential to check with your selected provider for warranty details.<br>
-              <br>
-            </div>
-            <div class="le_content" le_content_type="text" id="le_569d5b478c4fb" le_content_uuid="569d5b478c4fb" data-best_fit="1" data-attr_width="">
-              <strong>Q. Can I ask for rental or property related Services?</strong>
-              <br> Yes, you can. Feel free to find service providers as per the location you are looking for.<br>
-              <br>
-            </div>
-            <div class="le_content" le_content_type="text" id="le_569d5b702eba6" le_content_uuid="569d5b702eba6" data-best_fit="1" data-attr_width="">
-              <strong>Q. Can I go source service in a different town or city?</strong>
-              <br> Yes, you can. While sending the request for your service, choose a different address and add a new one to source service at your desired location.<br>
-              <br>
-            </div>
-            <div class="le_content" le_content_type="text" id="le_569d5b8f5ecf7" le_content_uuid="569d5b8f5ecf7" data-best_fit="1" data-attr_width="">
-              <strong>Q. As a professional service provider, do I need to pay any subscription charge or commission?</strong>
-              <br> This app is free from any subscription charges or commission fees for service providers. Join the community and offer your services without any financial constraints.<br>
-              <br>
-            </div>
-            <div class="le_content" le_content_type="text" id="le_569d5be4bbc8e" le_content_uuid="569d5be4bbc8e" data-best_fit="1" data-attr_width="">
-              <strong>Q. What if the vendor denies to come to my place?</strong>
-              <br> If a vendor denies to provide service at your location, you can cancel your booking and choose another provider who can accommodate your service request at your preferred location.<br>
-              <br>
-            </div>
-            <div class="le_content" le_content_type="text" id="le_569d5c0d8cb40" le_content_uuid="569d5c0d8cb40" data-best_fit="1" data-attr </div>
-              <div class="Half">
-                <div id="le_area14" le_region_slug="area14" le_region_uuid="area14" le_region_name="Area 14" le_region_type="content" le_region_editable="false" class="le_region le_area14">
-                </div>
-              </div>
-              <div class="Half">
-                <div id="le_area15" le_region_slug="area15" le_region_uuid="area15" le_region_name="Area 15" le_region_type="content" le_region_editable="false" class="le_region le_area15">
-                </div>
-              </div>
-            </div>
-            <div class="clear">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="copyrights">
-      <div class="container">
-        <div class="footer-distributed">
-          <div class="footer-left">
-            <p class="footer-company-name">All Rights Reserved. &copy; 2023 <a href="https://play.google.com/store/apps/details?id=com.clapserv&hl=en">Clap-Serv</a>
-            </p>
-          </div>
-        </div>
-      </div><!-- end container -->
-    </div><!-- end copyrights -->
+  </footer>
 
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+  <a href="#home" class="scroll-top" id="scrollTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="18 15 12 9 6 15"/></svg>
+  </a>
 
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/portfolio.js"></script>
-    <script src="js/hoverdir.js"></script>
+  <script>
+    // Navbar scroll behavior
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+      document.getElementById('scrollTop').classList.toggle('visible', window.scrollY > 400);
+    });
+
+    // Mobile nav toggle
+    document.getElementById('navToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+      document.getElementById('navToggle').classList.toggle('active');
+    });
+
+    // Close nav on link click
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('navLinks').classList.remove('open');
+        document.getElementById('navToggle').classList.remove('active');
+      });
+    });
+
+    // Tab switcher
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.feature-card, .step, .compare-card, .faq-item, .stat-item').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
 </body>
-
 </html>

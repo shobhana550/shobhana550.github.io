@@ -5,33 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clap-Serv Privacy Policy</title>
+    <link rel="stylesheet" href="../nav.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        strong {
-            color: #555;
-        }
+        body { font-family: 'Inter', Arial, sans-serif; margin: 0; background: #F7F8FA; color: #1A1D23; }
+        .page-content { max-width: 800px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+        h1 { font-size: 1.75rem; font-weight: 800; color: #1A1D23; margin: 0 0 1.5rem; }
+        h2 { font-size: 1.05rem; font-weight: 700; color: #1A1D23; margin: 1.75rem 0 0.5rem; }
+        p { font-size: 0.9rem; color: #6B7280; line-height: 1.75; margin-bottom: 0.75rem; }
+        ul { list-style: disc; padding-left: 1.5rem; }
+        li { font-size: 0.9rem; color: #6B7280; line-height: 1.75; margin-bottom: 0.3rem; }
+        strong { color: #374151; }
     </style>
 </head>
 
 <body>
-
+  <nav class="cs-navbar">
+    <div class="cs-nav-container">
+      <a href="../index.html" class="cs-nav-logo">
+        <img src="../images/logo_svg.png" alt="Clap-Serv" height="36">
+        Clap-Serv
+      </a>
+      <button class="cs-nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="cs-nav-links" id="navLinks">
+        <a href="../index.html">Home</a>
+        <a href="../pricing.html">Pricing</a>
+        <a href="../faq/index.html">FAQ</a>
+        <a href="../contact.html">Contact</a>
+        <a href="https://app.clap-serv.com" class="cs-btn-app" target="_blank">Open Web App</a>
+      </div>
+    </div>
+  </nav>
+  <div class="cs-page-header">
+    <h1>Privacy Policy</h1>
+    <p>How we collect, use, and protect your data</p>
+  </div>
+  <div class="page-content">
   <h1>Clap-Serv Privacy Policy</h1>
 
   <p><strong>Effective Date:</strong> 09/10/2020 </p>
@@ -110,16 +120,15 @@
 
     
       
-      <h2>Learn More</h2>
-    <a href="https://www.clap-serv.com/Terms&Condition.html" class="button">Learn More</a>
-
-    <h2>Go Back</h2>
-    <a href="https://www.clap-serv.com" class="button">Go Back</a>
-    <h2>Download</h2>
-    <a href="https://play.google.com/store/apps/details?id=com.clapserv&hl=en_IN" class="button">Download App</a>
-    
-
-
+</div><!-- end .page-content -->
+  <div class="cs-footer">
+    <p>&copy; 2025 Clap-Serv &mdash; <a href="../terms-conditions/index.html">Terms</a> &middot; <a href="../privacy-policy/index.html">Privacy</a> &middot; <a href="../contact.html">Contact</a></p>
+  </div>
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { toggle.classList.toggle('active'); links.classList.toggle('open'); });
+    links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { toggle.classList.remove('active'); links.classList.remove('open'); }));
+  </script>
 </body>
-
 </html>
