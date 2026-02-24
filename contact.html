@@ -145,7 +145,29 @@
 
     <div class="contact-form">
       <h3>Send a Message</h3>
-      <form action="contact.php" method="POST">
+
+      <!-- Success state (hidden by default) -->
+      <div id="form-success" style="display:none; text-align:center; padding: 2.5rem 1rem;">
+        <div style="width:56px;height:56px;background:#f0fdf4;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5" width="28" height="28"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h4 style="font-size:1.15rem;font-weight:700;margin:0 0 0.5rem;">Message Sent!</h4>
+        <p style="color:#6B7280;font-size:0.9rem;margin:0 0 1.5rem;">Thanks for reaching out. We'll get back to you within 1 business day.</p>
+        <button onclick="resetForm()" style="background:none;border:1px solid #E6E9EF;border-radius:8px;padding:0.5rem 1.25rem;font-family:Inter,sans-serif;font-size:0.85rem;cursor:pointer;color:#1A1D23;">Send another message</button>
+      </div>
+
+      <!-- Error banner (hidden by default) -->
+      <div id="form-error" style="display:none;background:#fff1f2;border:1px solid #fca5a5;border-radius:10px;padding:0.85rem 1rem;margin-bottom:1.25rem;font-size:0.85rem;color:#b91c1c;">
+        Something went wrong. Please try again or email us directly at <a href="mailto:contact@clap-serv.com" style="color:#b91c1c;">contact@clap-serv.com</a>.
+      </div>
+
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- Web3Forms config -->
+        <input type="hidden" name="access_key" value="c04f2a18-9901-4caf-8266-0dd10cdd9d5e">
+        <input type="hidden" name="subject" value="New Contact Message — Clap-Serv">
+        <input type="hidden" name="from_name" value="Clap-Serv Website">
+        <input type="checkbox" name="botcheck" style="display:none;">
+
         <div class="form-row">
           <div class="form-group">
             <label for="name">Full Name</label>
@@ -157,8 +179,8 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="subject">Subject</label>
-          <select id="subject" name="subject">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic">
             <option value="">Select a topic...</option>
             <option>General Question</option>
             <option>I'm a Buyer — Need Help</option>
@@ -172,7 +194,7 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
         </div>
-        <button type="submit" class="btn-submit">Send Message</button>
+        <button type="submit" class="btn-submit" id="submit-btn">Send Message</button>
         <p class="form-note">We typically reply within 1 business day.</p>
       </form>
     </div>
@@ -183,6 +205,7 @@
   </div>
 
   <script>
+    // Navbar
     const toggle = document.getElementById('navToggle');
     const links = document.getElementById('navLinks');
     toggle.addEventListener('click', () => {
@@ -193,6 +216,49 @@
       toggle.classList.remove('active');
       links.classList.remove('open');
     }));
+
+    // Web3Forms AJAX submission
+    const form = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('submit-btn');
+    const successDiv = document.getElementById('form-success');
+    const errorDiv = document.getElementById('form-error');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      errorDiv.style.display = 'none';
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+
+      try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: new FormData(form)
+        });
+        const data = await res.json();
+
+        if (data.success) {
+          form.style.display = 'none';
+          successDiv.style.display = 'block';
+        } else {
+          errorDiv.style.display = 'block';
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Send Message';
+        }
+      } catch (err) {
+        errorDiv.style.display = 'block';
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+      }
+    });
+
+    function resetForm() {
+      form.reset();
+      form.style.display = 'block';
+      successDiv.style.display = 'none';
+      errorDiv.style.display = 'none';
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+    }
   </script>
 </body>
 </html>
