@@ -671,6 +671,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .download-badge.live { background: rgba(34,197,94,0.2); color: #4ade80; }
 .download-badge.soon { background: rgba(251,191,36,0.2); color: #fbbf24; }
+.download-card.apk-direct { cursor: default; }
+.download-card.apk-direct:hover { transform: none; box-shadow: none; }
 
 /* ================================================================
    FAQ
